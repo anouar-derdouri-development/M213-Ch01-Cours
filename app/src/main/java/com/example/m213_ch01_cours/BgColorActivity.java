@@ -18,5 +18,26 @@ public class BgColorActivity extends AppCompatActivity {
         btnRed = findViewById(R.id.btnRed);
         btnGreen = findViewById(R.id.btnGreen);
         btnBlue = findViewById(R.id.btnBlue);
+
+        btnRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getWindow().getDecorView().setBackgroundColor(Color.RED);
+            }
+        });
+
+        btnGreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+            }
+        });
+
+        btnBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+            }
+        });
     }
 }

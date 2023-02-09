@@ -20,7 +20,20 @@ public class ShowMessageActivity extends AppCompatActivity {
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //region AlertDialog
 
+                AlertDialog.Builder builder = new AlertDialog.Builder(ShowMessageActivity.this);
+
+//                builder.setTitle("Greetings");
+//                builder.setMessage("Salam");
+//                builder.setIcon(android.R.drawable.ic_dialog_info);
+//                builder.show();
+
+                builder.setTitle("Greetings")
+                        .setMessage("Salam")
+                        .setIcon(android.R.drawable.ic_dialog_alert).show();
+
+                //endregion
             }
         });
     }
